@@ -10,8 +10,8 @@ import axios from 'axios';
 import Head from 'next/head';
 
 function MyApp({ Component, pageProps }: AppProps) {
-    axios.defaults.baseURL = process.env.NEXT_PUBLIC_SERVER_BASE_URL + '/api';
-    axios.defaults.withCredentials = true;
+    Axios.defaults.baseURL = process.env.NEXT_PUBLIC_SERVER_BASE_URL + '/api';
+    Axios.defaults.withCredentials = true;
 
     const { pathname } = useRouter();
     const authRoutes = ['/register', '/login'];

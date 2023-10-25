@@ -4,7 +4,7 @@ const { nextConfig } = require('next-images');
 const nextConfig = {
     reactStrictMode: true,
     images: {
-        domains: ['www.gravatar.com', 'localhost', 'ec2-43-200-8-24.ap-northeast-2.compute.amazonaws.com'],
+        domains: ['www.gravatar.com', 'localhost', 'ec2-18-117-131-28.us-east-2.compute.amazonaws.com:4000'],
     },
 };
 

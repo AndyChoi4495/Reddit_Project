@@ -13,7 +13,7 @@ import dotenv from 'dotenv';
 import cookieParser from 'cookie-parser';
 
 const app = express();
-const origin = 'http://localhost:3000';
+const origin = process.env.ORIGIN;
 app.use(
     cors({
         origin,
